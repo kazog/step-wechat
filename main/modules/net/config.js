@@ -1,12 +1,11 @@
 /**
  * Create By: Meng
- * Date: 2022-01
+ * Date: 2022-03
  * 网络配置项
  */
 
 export const ENV_CONST = {
     env: 'prod',
-    // env: 'dev',
     // env: 'test',
 }
 
@@ -29,10 +28,6 @@ export function requestParams(params={}) {
 }
 
 const _ENV_HOST = {
-    dev: {
-        base: 'https://devbase123.com',
-        auth: 'https://devauth123.com'
-    },
     prod: {
         base: 'https://prodbase123.com',
         auth: 'https://prodauth123.com'

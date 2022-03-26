@@ -5,8 +5,8 @@
  */
 import { requestHeader, requestHost, ENV_CONST } from './config';
 
-function _toast(title = '', icon = 'none', show = true) {
-    if (show && title) {
+function _toast(show, title = '', code, icon = 'none') {
+    if (show && code != 0 && title) {
         wx.showToast({
             title,
             icon
@@ -14,7 +14,7 @@ function _toast(title = '', icon = 'none', show = true) {
     }
 }
 
-function _loading(loading = true, title = '加载中...') {
+function _loading(loading, title = '加载中...') {
     if (loading) {
         wx.showLoading({
             title,
@@ -24,6 +24,12 @@ function _loading(loading = true, title = '加载中...') {
     }
 }
 
+/**
+ * url:
+ * method:
+ * data: header:
+ * env: host: toast: loading:
+ */
 export function request({ env = ENV_CONST.env, host = 'base', url = '', method = 'GET', data = {}, header = {}, toast = true, loading = true, loadStr = '加载中...' } = {}) {
 
     _loading(loading, loadStr);
@@ -51,7 +57,7 @@ export function request({ env = ENV_CONST.env, host = 'base', url = '', method =
             },
             complete: () => {
                 _loading(false);
-                _toast(toast, result.message);
+                _toast(toast, result.message, result.code);
             }
         })
     });
@@ -145,6 +151,8 @@ function _parseError(result, data) {
 }
 
 function _pointLog(tag, msg) {
-    console.log(tag);
-    console.log(msg);
+    if (ENV_CONST.env == 'prod') {
+        console.log(tag);
+        console.log(msg);
+    }
 }
