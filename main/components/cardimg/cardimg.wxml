@@ -1,0 +1,7 @@
+<!--components/cardimg/cardimg.wxml-->
+<view>
+	<view class="v-item-layout" hover-class="v-img-hover">
+		<image style="width: 100%; height: 100%; border-radius: 6rpx;" mode="aspectFill" src="/assets/img/top_m.jpeg" />
+		<view class="v-item-collect">赞12</view>
+	</view>
+</view>

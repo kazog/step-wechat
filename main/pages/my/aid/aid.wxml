@@ -1,0 +1,8 @@
+<!-- -->
+<view class="aid-container">
+  <header title="打赏作者"/>
+  <text class="aid-text">您的善心举动,将使我开发更多您喜欢的功能！</text>
+  <view style="height: 56rpx"/>
+  <image class="aid-img" src="{{alpay}}"/>
+  <image class="aid-img" src="{{wxpay}}"/>
+</view>

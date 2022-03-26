@@ -1,0 +1,21 @@
+<!--packageCoin/component/invite/alert.wxml-->
+<view class="vm-invite-box" catchtouchmove="true">
+  <view class="vm-invite-view">
+    <image wx:if="{{value.type != 0}}" class="vm-invite-img" src="{{value.pic || '/assets/icon/invite_ic.jpg'}}" />
+    <image wx:if="{{value.type == 0}}" class="vm-invite-img" src="{{value.bg || '/assets/icon/invite_ic.jpg'}}" />
+    <view wx:if="{{value.type == 0}}" class="vm-invite-content-box">
+      <view class="vm-invite-content">
+        <view>受邀人：{{value.user}}</view>
+        <view>联系电话：{{value.phone}}</view>
+        <view>主题：{{value.title}}</view>
+        <view>时间：{{value.dateStr}}</view>
+        <view>简要：<text class="vm-invite-desc">{{value.content}}</text></view>
+      </view>
+    </view>
+    <view class="vm-invite-action">
+      <view class="vm-invite-reject" bindtap="onTap" data-tag="reject">谢辞</view>
+      <view class="vm-invite-ok" bindtap="onTap" data-tag="ok">接受邀请</view>
+    </view>
+  </view>
+  <image class="vm-invite-close" src="/assets/icon/close_ic.png" bindtap="onTap" data-tag="close" />
+</view>

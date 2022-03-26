@@ -1,0 +1,18 @@
+<!--  -->
+<view class="login-container">
+  <header title="账户登录"/>
+  <image class="login-bg" src="{{defIcon}}"/>
+
+  <view class="login-layout">
+    <!-- <view class="alert">暂不支持手机号登录</view> -->
+    <input class="login-input" type="number" bindinput="bindInputPhone" placeholder="请输入手机号"/>
+    <input class="login-input" password="true" bindinput="bindInputPwd" placeholder="请输入密码"/>
+    <view class="login-button" bindtap="onLogin">登 录</view>
+    <button wx:if="{{canIUseProfile}}" style="width: 100%;" class="login-button2" type="default" bindtap="getUserProfile"> 微信一键登录 </button>
+    <button wx:else style="width: 100%;" class="login-button2" type="default" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 微信一键登录 </button>
+    <!-- <view wx:if="false" class="login-action-layout">
+      <view class="login-action-view" bindtap="gotoPwd">忘记密码</view>
+      <view class="login-action-view" bindtap="gotoRegister">注册</view>
+    </view> -->
+  </view>
+</view>

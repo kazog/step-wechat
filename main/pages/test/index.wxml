@@ -1,0 +1,19 @@
+<!--pages/test/index.wxml-->
+<view class="page">
+    <view class="list">
+        <block wx:for="{{itemList}}" wx:key="item">
+            <view wx:if="{{item.tag == 0}}" class="item">
+                <view class="img"></view>
+                <view wx:if="{{item.title}}" class="tag">{{item.title}}</view>
+            </view>
+        </block>
+    </view>
+    <view class="list">
+        <block wx:for="{{itemList}}" wx:key="item">
+            <view wx:if="{{item.tag == 1}}" class="item">
+                <view class="img"></view>
+                <view wx:if="{{item.title}}" class="tag">{{item.title}}</view>
+            </view>
+        </block>
+    </view>
+</view>

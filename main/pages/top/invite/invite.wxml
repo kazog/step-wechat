@@ -1,0 +1,54 @@
+<!-- -->
+<view>
+  <header title="创建邀请函" />
+  <view class="push-input-layout">
+    <view class="push-input-box">
+      <view class="push-input-label">时 间</view>
+      <picker mode="date" bindchange="onSelectDate">
+        <view class="push-select-view">
+          <text class="push-date-text">{{dateStr||'点击选择邀请时间'}}</text>
+          <image class="next-ic" src="/assets/icon/next_01.png" />
+        </view>
+      </picker>
+    </view>
+
+    <view class="push-input-box">
+      <view class="push-input-label">地 址</view>
+      <view class="push-select-view" bindtap="onSelectAddress">
+        <text class="push-date-text">{{address||'点击选择邀请地址'}}</text>
+        <image class="next-ic" src="/assets/icon/next_01.png" />
+      </view>
+    </view>
+
+    <view class="push-input-box">
+      <view class="push-input-label">标 题</view>
+      <input class="push-input-view" bindinput="bindInputTitle" maxlength="37" placeholder="点击填写邀请标题"
+        value="{{title}}" />
+    </view>
+    <view class="push-input-box">
+      <view class="push-input-label">手机号</view>
+      <input class="push-input-view" bindinput="bindInputPhone" maxlength="11" placeholder="点击填写联系手机号"
+        value="{{title}}" />
+    </view>
+    <view class="push-input-box">
+      <view class="push-input-label">受邀人</view>
+      <input class="push-input-view" bindinput="bindInputName" maxlength="17" placeholder="点击填写受邀人姓名"
+        value="{{title}}" />
+    </view>
+
+    <view class="push-label">邀请简述</view>
+    <textarea class="push-input-view2" bindinput="bindInputDesc" maxlength="97" placeholder="点击填写邀请简述"
+      value="{{desc}}" />
+    </view>
+
+  <view class="push-input-layout">
+    <view class="push-label">上传邀请照片</view>
+    <imgpicker datas="{{imgList}}" bindchange="onChangeImg"/>
+	</view>
+  
+  <!-- <view class="push-alert">注: 选择时间轴中已存在的日期将会覆盖之前的数据</view> -->
+  <view class="push-action-box">
+    <view class="push-commit" bindtap="onCancel">取消</view>
+    <view class="push-commit2" bindtap="onCommit">提交</view>
+  </view>
+</view>

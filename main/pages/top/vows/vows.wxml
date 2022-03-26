@@ -1,0 +1,4 @@
+<!--main/pages/top/vows/vows.wxml-->
+<view>
+  <header title="许愿池" />
+</view>

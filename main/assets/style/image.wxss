@@ -1,0 +1,31 @@
+/* 图片样式 */
+
+.a-huati-img {
+  width: 144rpx;
+  height: 144rpx;
+  border-radius: 6rpx;
+}
+
+.a-next-icon {
+  width: 36rpx;
+  height: 36rpx;
+  margin-left: 12rpx;
+}
+
+.a-item-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 24rpx;
+}
+
+.a-tab-icon {
+  width: 56rpx;
+  height: 56rpx;
+}
+
+.img-hover {
+  /* position: relative; */
+  opacity: 0.87;
+  transform: scale(0.97, 0.97);
+  background-color: #F3F3F3;
+}

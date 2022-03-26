@@ -1,0 +1,39 @@
+/* components/image_picker/image_picker.wxss */
+
+.v-image-picker-container {
+  display: flex;
+  margin: 4rpx;
+  flex-wrap: wrap;
+}
+
+.v-image-picker-box {
+  width: 33.3%;
+  display: flex;
+  position: relative;
+}
+
+.v-image-picker-image {
+  display: flex;
+  width: 100%;
+  margin: 4rpx;
+  height: 223rpx;
+  border-radius: 4rpx;
+  background-color: #eee;
+}
+
+.v-image-picker-add {
+  display: flex;
+  width: 100%;
+  margin: 4rpx;
+  height: 223rpx;
+  border-radius: 4rpx;
+}
+.v-image-picker-del {
+  top: 0;
+  right: 0;
+  z-index: 1;
+  position: absolute;
+  width: 44rpx;
+  height: 44rpx;
+  border-radius: 22rpx;
+}

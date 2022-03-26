@@ -1,0 +1,96 @@
+/* packageCoin/component/invite/alert.wxss */
+
+.vm-invite-box {
+  top: 0;
+  z-index: 9997;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6)
+}
+
+.vm-invite-view {
+  width: 90%;
+  height: 900rpx;
+  display: flex;
+  margin-top: 96rpx;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  /* border-radius: 24rpx; */
+  /* background-color: white; */
+}
+
+.vm-invite-img {
+  width: 87%;
+  height: 760rpx;
+  border-radius: 18rpx;
+}
+
+.vm-invite-content-box {
+  position: absolute;
+  top: 0;
+  width: 87%;
+  height: 760rpx;
+  border-radius: 18rpx;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+}
+
+.vm-invite-content {
+  padding: 167rpx 72rpx 127rpx 72rpx;
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+
+  color: #323232;
+  font-size: 34rpx;
+  line-height: 56rpx;
+}
+
+.vm-invite-action {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  /* border-top: solid #EEE 1px; */
+}
+
+.vm-invite-reject {
+  width: 112px;
+  margin-left: 48rpx;
+  padding: 20rpx 0;
+  color: #232323;
+  font-size: 36rpx;
+  text-align: center;
+  border-radius: 56rpx;
+  background-color: rgba(255, 255, 255, 0.67);
+}
+
+.vm-invite-ok {
+  width: 112px;
+  margin-right: 48rpx;
+  padding: 20rpx 0;
+  color: #232323;
+  font-size: 36rpx;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 56rpx;
+  background-color: rgba(255, 255, 255, 0.67);
+}
+
+.vm-invite-close {
+  z-index: 3;
+  width: 72rpx;
+  height: 72rpx;
+  margin-top: 72rpx;
+}
+
+.vm-invite-desc {
+  color: #676767;
+  font-size: 30rpx;
+}

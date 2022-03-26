@@ -1,0 +1,14 @@
+<!--  -->
+<view class="ab-container">
+  <header title="关于我" />
+  <image class="ab-img" src="/assets/icon/user_ic.png" />
+  <view class="ab-box">
+    <text class="ab-text">时间的流逝让我们知道生命的珍贵，我们虽然不能让时间停止，但能让时间定格在美好瞬间。</text>
+    <text class="ab-text">打开人生新章节，记录有你的时光。</text>
+  </view>
+
+  <view class="ab-box" style="margin-top: 48rpx; align-items: flex-end;">
+    <text class="ab-text">Meng</text>
+    <text class="ab-email">umxkz@qq.com</text>
+  </view>
+</view>

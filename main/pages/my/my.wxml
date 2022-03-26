@@ -1,0 +1,46 @@
+<!--pages/my/my.wxml-->
+<view class="m-container">
+	<!-- <header back="{{false}}"/> -->
+	<!-- 顶部栏 -->
+	<image class="top-bg" mode="aspectFill" src="/assets/img/top_m.jpeg" />
+	<view class="top-layout">
+		<view class="user-box" hover-class="a-hover" bindtap="onInfoPress">
+			<image class="user-icon" src="{{user.avatarUrl}}" />
+			<view style="flex: 1">
+				<view class="user-name">{{user.nickName}}</view>
+				<view class="actives">{{user.province}}</view>
+				<view class="a-row" style="margin-top: 24rpx">
+					<view class="user-text" hover-stop-propagation="true">有吃啥都不是事</view>
+					<!-- <view class="user-text" hover-class="a-hover" hover-stop-propagation="true">0<text class="user-tab">关注</text></view> -->
+					<!-- <view class="user-text" hover-class="a-hover" hover-stop-propagation="true">0<text class="user-tab">喜欢</text></view> -->
+				</view>
+			</view>
+			<image class="a-next-icon" src="/assets/icon/wnext_ic.png" />
+		</view>
+	</view>
+	<!-- tab -->
+	<view class="tab-box">
+		<view class="tab-view" hover-class="a-btn-hover3" data-index="0" bindtap="onTabPress">
+			<image class="a-tab-icon" src="/assets/icon/huati.png"/>
+			<view class="a-tab-value">许愿</view>
+		</view>
+		<view class="tab-view" hover-class="a-btn-hover3" data-index="2" bindtap="onTabPress">
+			<image class="a-tab-icon" src="/assets/icon/join_ic.png"/>
+			<view class="a-tab-value">信箱</view>
+		</view>
+		<view class="tab-view" hover-class="a-btn-hover3" data-index="1" bindtap="onTabPress">
+			<image class="a-tab-icon" src="/assets/icon/huodong.png"/>
+			<view class="a-tab-value">签到</view>
+		</view>
+	</view>
+	<!-- 内容列表 -->
+	<view class="a-column">
+		<block wx:for="{{tablist}}" wx:key="index">
+			<view class="item-box" hover-class="a-btn-hover3" bindtap="onPressItem" data-index="{{index}}">
+				<image class="a-item-icon" src="{{item.icon}}"/>
+				<view class="a-item-value" style="flex: 1">{{item.value}}</view>
+				<image class="a-next-icon" src="/assets/icon/next_ic.png"/>
+			</view>
+		</block>
+	</view>
+</view>

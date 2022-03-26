@@ -1,0 +1,15 @@
+<!--client/pages/home/down/down.wxml-->
+<view class="container">
+  <header title="AAPlus" />
+  <view class="layout">
+  <text>{{iurl}}</text>
+    <image class="img" mode="aspectFit" src="{{iurl}}" bindtap="onPress"/>
+    <view class="down-btn" bindtap="onDown">
+      <image class="down-img" src="/assets/icon/xiazai2.png"/>
+    </view>
+
+    <!-- <view class="music-btn" bindtap="onPlayMusic">
+      <image class="music-img" src="/assets/icon/music_ic.png"/>
+    </view> -->
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<!--components/jump/jump.wxml-->
+<view bindtap="onTap" style="padding: 8px 0">
+  <block wx:for="{{text}}" wx:key="index">
+    <text class="jump-text">{{item}}</text>
+  </block>
+</view>

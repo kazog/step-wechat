@@ -1,0 +1,11 @@
+// 
+var foo = "hello world";
+
+var picnum = function (imgs) {
+  var str = !imgs ? (' - ' + imgs.length + '张') : '';
+  return str;
+}
+module.exports = {
+  foo: foo,
+  picnum: picnum
+};

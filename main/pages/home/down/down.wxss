@@ -1,0 +1,47 @@
+/* client/pages/home/down/down.wxss */
+
+.img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8rpx;
+}
+.layout {
+  flex: 1;
+  position: relative;
+}
+.down-img {
+  width: 30px;
+  height: 30px;
+  /* background-color: orange; */
+}
+.down-btn {
+  position: absolute;
+  top: 36px;
+  right: 21px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  background-color: #00000050;
+}
+.music-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 23px;
+  background-color: white;
+  /* background-color: orange; */
+}
+.music-btn {
+  position: absolute;
+  bottom: 48px;
+  right: 16px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: #000000;
+}

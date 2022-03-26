@@ -1,0 +1,9 @@
+<!--  -->
+<view class="container">
+  <header title="分享" />
+  <view class="layout">
+    <image class="logo" src="/assets/icon/user_ic.png" />
+    <view class="name">您的善心举动,将给我带来巨大的鼓舞！</view>
+    <button open-type="share" type="primary">点击分享</button>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<!--components/cardvideo/cardvideo.wxml-->
+<view class="v-item-layout" hover-class="v-view-hover">
+	<image class="v-item-img" mode="aspectFill" src="/assets/icon/empty.jpg" />
+	<view class="v-item-text">咦，资源不见了！🈳</view>
+</view>

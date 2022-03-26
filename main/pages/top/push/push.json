@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "imgpicker": "/components/imgpicker/picker"
+  }
+}
