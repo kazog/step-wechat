@@ -1,7 +1,0 @@
-{
-  "enablePullDownRefresh": true,
-  "usingComponents": {
-    "invite": "/components/invite/invite",
-    "time-axis": "/components/time-axis/index"
-  }
-}

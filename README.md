@@ -1,12 +1,39 @@
-# 云开发 quickstart
+# 简介
 
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
 
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
+## 项目结构
 
-## 参考文档
+```bash
 
-- [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
-
+├── cloud                           # 云环境
+│──                                 # 测试代码
+│── src                             # 源代码
+    │── components                  # 公共组件
+        |── mysql.ts                # - 数据库配置
+    │── images                      # 实体/数据类
+        |── icon                    # - 请求Body
+        |── index.js                # - 
+    │── modules                     # 模块
+        |── api                     # - 接口
+        |── auth                    # - 权限
+        |── event                   # - 事件bus
+        |── net                     # - 网络
+        |── store                   # - 存储
+    │── pages                       # 接口模块
+        │── home                    # - 首页
+        │── my                      # - 我的
+        │── sort                    # - 分类
+        │── test                    # - 测试页面
+    │── subpack                     # 分包一
+        │── components              # - 公共组件
+        │── images                  # - 图标资源
+        │── pages                   # - 分包页面
+    │── utils                       # 工具类
+        |── crypto                  # - 加密
+        |── index.ts                # - 
+├── .eslintrc                       # eslint配置文件
+│── .gitignore                      # git忽视文件
+│── project.config.json             # babel配置
+│── package.json                    # 项目依赖等
+│── README.md                       # 说明文件
+```

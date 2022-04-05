@@ -1,0 +1,5 @@
+<!--components/cardvideo/cardvideo.wxml-->
+<view class="v-item-layout" hover-class="v-view-hover">
+	<image class="v-item-img" mode="aspectFill" src="/images/img/empty.png" />
+	<view class="v-item-text">咦，没有内容哦！</view>
+</view>

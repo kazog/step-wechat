@@ -1,0 +1,1 @@
+"/Applications/wechatwebdevtools.app/Contents/MacOS/cli" cloud functions deploy --e guang24-3gt1jv97bc8cc441 --n test --r --project "/Users/user/Project/Program/BookBar" --report_first --report

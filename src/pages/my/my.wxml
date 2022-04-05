@@ -1,0 +1,46 @@
+<!--  -->
+<view class="m-container">
+	<!-- <header back="{{false}}"/> -->
+	<!-- 顶部栏 -->
+	<image class="top-bg" mode="aspectFill" src="/images/img/top_m.jpeg" />
+	<view class="top-layout">
+		<view class="user-box" bindtap="onInfoPress">
+			<image class="user-icon" src="{{user.avatar}}" />
+			<view style="flex: 1">
+				<view class="user-name" hover-class="a-hover">{{user.nickName}}</view>
+				<view class="actives">{{user.province}}</view>
+				<view class="a-row" style="margin-top: 24rpx">
+					<view class="user-text" hover-class="a-hover" hover-stop-propagation="true" >1<text class="user-tab">收藏</text></view>
+					<view class="user-text" hover-class="a-hover" hover-stop-propagation="true">2<text class="user-tab">点读</text></view>
+					<view class="user-text" hover-class="a-hover" hover-stop-propagation="true">3<text class="user-tab">关注</text></view>
+				</view>
+			</view>
+			<!-- <image class="a-next-icon" src="/images/icon/wnext_ic.png" /> -->
+		</view>
+	</view>
+	<!-- tab -->
+	<view wx:if="{{1==1}}" class="tab-box">
+		<view class="tab-view" hover-class="a-btn-hover3" data-index="0" bindtap="onTabPress">
+			<image class="a-tab-icon" src="/images/icon/huati.png"/>
+			<view class="a-tab-value">我的作品</view>
+		</view>
+		<view class="tab-view" hover-class="a-btn-hover3" data-index="1" bindtap="onTabPress">
+			<image class="a-tab-icon" src="/images/icon/huodong.png"/>
+			<view class="a-tab-value">今日活动</view>
+		</view>
+		<view class="tab-view" hover-class="a-btn-hover3" data-index="2" bindtap="onTabPress">
+			<image class="a-tab-icon" src="/images/icon/t_down.png"/>
+			<view class="a-tab-value">下载记录</view>
+		</view>
+	</view>
+	<!-- 内容列表 -->
+	<view class="menu-list">
+		<block wx:for="{{tablist}}" wx:key="index">
+			<view class="item-box" hover-class="a-btn-hover3" bindtap="onPressItem" data-index="{{index}}">
+				<image class="a-item-icon" src="{{item.icon}}"/>
+				<view class="a-item-value" style="flex: 1">{{item.value}}</view>
+				<image class="a-next-icon" src="/images/icon/next_ic.png"/>
+			</view>
+		</block>
+	</view>
+</view>

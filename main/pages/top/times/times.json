@@ -1,6 +1,0 @@
-{
-  "enablePullDownRefresh": true,
-  "usingComponents": {
-    "jump": "/components/jump/jump"
-  }
-}

@@ -1,0 +1,28 @@
+/* components/cardvideo/cardvideo.wxss */
+.v-view-hover {
+  /* position: relative; */
+  opacity: 0.96;
+  transform: scale(0.99, 0.99);
+  /* background-color: #F3F3F3; */
+}
+
+.v-item-layout {
+  width: 100%;
+  height: 100%;
+  margin-top: 24rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.v-item-img {
+  width: 360rpx;
+  height: 360rpx;
+  border-radius: 8rpx;
+}
+
+.v-item-text {
+  color: #676767;
+  font-size: 30rpx;
+  margin-top: 24rpx;
+}
