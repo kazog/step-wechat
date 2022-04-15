@@ -1,4 +1,3 @@
-<!--components/image_picker/image_picker.wxml-->
 <view class="v-image-picker-container">
   <block wx:for="{{datas}}" wx:key="index">
     <view class="v-image-picker-box">

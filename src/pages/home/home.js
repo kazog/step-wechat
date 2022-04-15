@@ -86,7 +86,7 @@ Page({
     let index = e.currentTarget.dataset.index;
     
     wx.navigateTo({
-      url: '/src/pages/home/home',
+      url: '/pages/home/home',
     });
   },
   onPressItem: function (e) {

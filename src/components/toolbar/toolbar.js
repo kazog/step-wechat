@@ -48,13 +48,13 @@ Component({
         displayStyle: ''
     },
     attached: function attached() {
-        var _this = this;
+        let _this = this;
 
-        var isSupport = !!wx.getMenuButtonBoundingClientRect;
-        var rect = wx.getMenuButtonBoundingClientRect ? wx.getMenuButtonBoundingClientRect() : null;
+        let isSupport = !!wx.getMenuButtonBoundingClientRect;
+        let rect = wx.getMenuButtonBoundingClientRect ? wx.getMenuButtonBoundingClientRect() : null;
         wx.getSystemInfo({
             success: function success(res) {
-                var ios = !!(res.system.toLowerCase().search('ios') + 1);
+                let ios = !!(res.system.toLowerCase().search('ios') + 1);
                 _this.setData({
                     ios: ios,
                     statusBarHeight: res.statusBarHeight,
@@ -68,8 +68,8 @@ Component({
 
     methods: {
         _showChange: function _showChange(show) {
-            var animated = this.data.animated;
-            var displayStyle = '';
+            let animated = this.data.animated;
+            let displayStyle = '';
             if (animated) {
                 displayStyle = 'opacity: ' + (show ? '1' : '0') + ';-webkit-transition:opacity 0.5s;transition:opacity 0.5s;';
             } else {
@@ -80,7 +80,7 @@ Component({
             });
         },
         back: function back() {
-            var data = this.data;
+            let data = this.data;
             wx.navigateBack({
                 delta: data.delta
             });

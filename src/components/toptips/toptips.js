@@ -38,7 +38,7 @@ Component({
         }
     },
     attached: function attached() {
-        var data = this.data;
+        let data = this.data;
         this.setData({
             className: data.typeClassMap[data.type] || ''
         });
@@ -55,7 +55,7 @@ Component({
             this._showToptips(newVal);
         },
         _showToptips: function _showToptips(newVal) {
-            var _this = this;
+            let _this = this;
 
             if (newVal && this.data.delay) {
                 setTimeout(function () {

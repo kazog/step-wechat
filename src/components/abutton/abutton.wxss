@@ -1,0 +1,10 @@
+.v-app-button {
+  padding: 8rpx 16rpx;
+  background-color: aqua;
+}
+.v-hover {
+  opacity: 0.96;
+  transform: scale(0.996, 0.996);
+  /* background-color: rgba(0, 0, 0, 0.01); */
+  box-shadow: 0 0 16rpx #CCC inset;
+}

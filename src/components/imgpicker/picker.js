@@ -1,4 +1,4 @@
-// components/image_picker/image_picker.js
+// 图片选择
 Component({
 
   properties: {

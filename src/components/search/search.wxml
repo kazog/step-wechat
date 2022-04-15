@@ -1,4 +1,7 @@
-<!-- -->
-<view>
-
+<view class="v-row v-app-search">
+  <view class="v-row v-search-box">
+    <view class="v-search-icon" />
+    <text class="v-search-text">{{keyword || '请输入关键字'}}</text>
+    <view wx:if="{{inputStr}}" class="v-search-btn">搜索</view>
+  </view>
 </view>

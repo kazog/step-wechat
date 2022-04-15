@@ -1,0 +1,3 @@
+<view class="{{aclass}}" hover-class="{{hover}}" bindlongtap="onLongClick" bindtap="onClick">
+  <slot></slot>
+</view>

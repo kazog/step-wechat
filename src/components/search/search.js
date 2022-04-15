@@ -1,7 +1,7 @@
-// components/search/search.js
+// 搜索
 Component({
   properties: {
-    searchStr: {
+    keyword: {
       type: String,
       value: ''
     }
@@ -11,7 +11,7 @@ Component({
     inputStr: ''
   },
   observers: {
-    searchStr: function(key) {
+    keyword: function(key) {
       this.setData({
         inputStr: key
       })

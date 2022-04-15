@@ -51,15 +51,16 @@
   flex-direction: row;
   overflow: scroll;
 }
+.scroll-box::-webkit-scrollbar {
+  display: none;
+}
 .huati-box {
   min-width: 180rpx;
   width: 180rpx;
   display: flex;
   margin-right: 8rpx;
 }
-.huati-box::-webkit-scrollbar {
-  display: none;
-}
+
 .huati-item {
   width: 160rpx;
   height: 88rpx;
