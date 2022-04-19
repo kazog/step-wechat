@@ -1,66 +1,73 @@
 /**
- * Create By: Meng
+ * Author: Meng
  * Date: 2022-03
+ * Desc: 存储数据 - 
  */
 
-export function getInfo() {
-  return wx.getStorageSync('item13_info');
-}
+const ACCOUNT = "account_data_info"; // 账号
+const ADDRESS = "cur_address_data"; // 地址
+const LOGIN = "login_status"; // 
+const SHOP = "cur_shop_info"; // 店铺
+const TOKEN = "account_token"; // 
 
-export function setInfo(data) {
-  
+// 获取登录信息
+export function getAccountInfo() {
+  return wx.getStorageSync(ACCOUNT);
+}
+// 设置登录信息
+export function setAccountInfo(data) {
   wx.setStorage({
-    key: 'item13_info',
-    data
-  })
+    key: ACCOUNT,
+    data,
+  });
 }
 
-export function isLogin() {
-  return wx.getStorageSync('user_login') == 1;
+// 判断是否登录
+export function hasLogin() {
+  return wx.getStorageSync(ACCOUNT);
 }
 
-export function setLogin(data={}){
-  setBg(data.bgImg)
+// 检测是否登录
+export function checkLogin(isLogin=true, params) {
+  const login = hasLogin();
+  if(isLogin) {
+    wx.navigateTo({
+      url: '/pages/my/login/login?params=' + params,
+    });
+  }
+  return login;
+}
+
+// 获取Token
+export function getTokenStr() {
+  return wx.getStorageSync(TOKEN);
+}
+
+// 获取地址信息
+export function getAddress() {
+  return wx.getStorageSync(ADDRESS);
+}
+// 设置地址信息
+export function setAddress(data = "") {
   wx.setStorage({
-    key: 'user_login',
-    data
-  })
+    key: ADDRESS,
+    data,
+  });
 }
 
-export function getBg() {
-  return wx.getStorageSync('user_bgimg');
+// 获取店铺信息
+export function getShopInfo() {
+  return wx.getStorageSync(SHOP);
 }
-
-export function setBg(data=''){
+// 设置店铺信息
+export function setShopInfo(data) {
   wx.setStorage({
-    key: 'user_bgimg',
-    data
-  })
+    key: SHOP,
+    data,
+  });
 }
 
-export function getUser() {
-  return wx.getStorageSync('user12_info');
+export function clearAccount() {
+  wx.removeStorage({ key: ACCOUNT });
+  wx.removeStorage({ key: TOKEN });
 }
-
-export function setUser(data){
-  wx.setStorage({
-    key: 'user12_info',
-    data
-  })
-}
-
-export function clearTimes() {
-  wx.removeStorageSync('user12_times');
-}
-
-export function getTimeData() {
-  return wx.getStorageSync('user12_times');
-}
-
-export function setTimes(data){
-  wx.setStorage({
-    key: 'user12_times',
-    data
-  })
-}
-

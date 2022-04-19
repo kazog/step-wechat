@@ -1,7 +1,7 @@
 /**
- * Create By: Meng
- * Date: 2022-03
- * 统一权限申请
+ * Author: Meng
+ * Date: 2022-04
+ * Desc: 权限申请
  */
 
 export const Scope = {
