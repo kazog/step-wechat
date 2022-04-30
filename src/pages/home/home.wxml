@@ -1,5 +1,5 @@
 <!--  -->
-<view class="h-container">
+<view class="container home">
     <header back="{{false}}" />
     <!-- tab 关注 推荐 各类。。。 -->
     <view class="tab-box">
@@ -20,15 +20,15 @@
     <!-- <scroll-view class="scroll-box" scroll-x="{{true}}" enable-flex="{{true}}"> -->
     <view class="scroll-box">
         <block wx:for="{{tagList}}" wx:key="index">
-            <view class="huati-box" hover-class="a-hover" bindtap="onPressHuati" data-index="{{index}}">
-                <view class="huati-item row-center" style="background-color: {{item.color}};">{{item.title}}</view>
+            <view class="huati-box" hover-class="hover" bindtap="onPressHuati" data-index="{{index}}">
+                <view class="row center huati-item" style="background-color: {{item.color}};">{{item.title}}</view>
             </view>
         </block>
     </view>
     <!-- 内容列表 -->
-    <view class="a-gridlist">
+    <view class="wrap">
         <block wx:for="{{pageList}}" wx:key="index">
-            <view class="item-box" bindtap="onPressItem" data-tag="{{item.src}}">
+            <view class="item-box" bindtap="onBookItem" data-tag="{{item.src}}">
                 <image class="item-img" mode="aspectFill" lazy-load src="{{item.url}}" />
                 <view class="item-text item-mark"> {{item.name}}</view>
             </view>

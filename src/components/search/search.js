@@ -11,7 +11,7 @@ Component({
     inputStr: ''
   },
   observers: {
-    keyword: function(key) {
+    'keyword': function(key) {
       this.setData({
         inputStr: key
       })

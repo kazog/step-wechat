@@ -1,0 +1,9 @@
+<view class="v-tab-layout">
+  <block wx:for="{{tabs}}" wx:key="index">
+    <view class="v-tab-view" bindtap="onClick" data-idx="{{index}}">
+      <text class="{{tabIdx == index ? '' : 'v-tab-unselect'}}">{{item}}</text>
+      <view wx:if="{{tabIdx == index}}" class="v-tab-line" />
+      <view wx:if="{{tabIdx != index}}" class="v-tab-line2" />
+    </view>
+  </block>
+</view>

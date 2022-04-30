@@ -1,103 +1,102 @@
-/* pages/my/my.wxss */
-.m-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    /* background-color: F8F8F8; */
+.my {
+  flex: 1;
+  position: relative;
+  background-color: white;
 }
-
 .top-bg {
-    top: 0;
-    width: 100%;
-    height: 450rpx;
-    position: absolute;
+  top: 0;
+  width: 100%;
+  height: 430rpx;
+  position: absolute;
+  /* background: linear-gradient(7deg, #ffffff, #ffebd7); */
 }
-
 .top-layout {
-    color: white;
-    z-index: 1;
-    height: 418rpx;
-    padding-left: 32rpx;
-    padding-right: 32rpx;
-    display: flex;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  height: 260rpx;
+  padding: 152rpx 32rpx 0 32rpx;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
 }
-
-.user-box {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-top: 146rpx;
-}
-
 .user-icon {
-    width: 128rpx;
-    height: 128rpx;
-    border-radius: 62rpx;
-    margin-right: 32rpx;
+  width: 144rpx;
+  height: 144rpx;
+  border-radius: 72rpx;
+  margin-right: 32rpx;
 }
-
 .user-name {
-    font-size: 36rpx;
-    font-weight: bold;
+  color: white;
+  font-size: 48rpx;
+  line-height: 66rpx;
+  font-weight: 500;
+  font-family: PingFangSC-Medium;
 }
-
-.user-text {
-    font-size: 34rpx;
-    font-weight: bold;
-}
-
-.user-tab {
-    font-size: 28rpx;
-    font-weight: normal;
-    margin-right: 48rpx;
-    margin-left: 8rpx;
-}
-
-.user-id {
-    font-size: 28rpx;
-    padding: 6rpx 0;
-    margin-bottom: 16rpx;
-}
-
-.actives {
-    font-size: 26rpx;
-    padding: 6rpx 0;
-    margin-bottom: 16rpx;
+.user-phone {
+  color: white;
+  font-size: 24rpx;
 }
 
 .tab-box {
-    z-index: 1;
-    display: flex;
-    padding: 24rpx 48rpx;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: white;
-    border-top-left-radius: 32rpx;
-    border-top-right-radius: 32rpx;
-    border-bottom: solid #eee 1px;
+  z-index: 1;
+  height: 160rpx;
+  padding-top: -24rpx;
+  border-top-left-radius: 24rpx;
+  border-top-right-radius: 24rpx;
+  justify-content: space-between;
+  background-color: white;
 }
-
 .tab-view {
-    width: 146rpx;
-    height: 146rpx;
-    border-radius: 73rpx;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  width: 230rpx;
+  position: relative;
+}
+.tab-num {
+  color: #232323;
+  font-size: 40rpx;
+  font-weight: 700;
+  line-height: 52rpx;
+  font-family: PingFangSC-Medium;
+}
+.tab-value {
+  color: #979797;
+  font-size: 24rpx;
+  line-height: 34rpx;
+}
+.activity-box {
+  height: 200rpx;
+  margin: 0 32rpx 0 32rpx;
+  border-radius: 16rpx;
+  background-color: #fdf4ec;
+}
+.label-box {
+  height: 96rpx;
+  padding: 0 32rpx;
+  margin-top: 32rpx;
+  align-items: center;
+}
+.label-name {
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  color: #323232;
+  font-weight: 500;
 }
 
 .menu-list {
-    /* margin-top: 56rpx; */
-    background-color: white;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(4, 180rpx);
 }
 
-.item-box {
-    height: 96rpx;
-    display: flex;
-    padding: 0 32rpx;
-    align-items: center;
-    border-bottom: solid #eee 1px;
+.menu-box {
+  width: 180rpx;
+  height: 180rpx;
+}
+.menu-value {
+  color: #676767;
+  font-size: 26rpx;
+  line-height: 36rpx;
+}
+.menu-icon {
+  width: 52rpx;
+  height: 52rpx;
+  margin-bottom: 12rpx;
 }

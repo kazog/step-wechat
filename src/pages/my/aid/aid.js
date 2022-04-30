@@ -1,20 +1,21 @@
-// client/pages/my/aid/aid.js
+/**
+ * Author: Meng
+ * Date: 2022-04
+ * Desc: 赞赏
+ */
 Page({
-
   data: {
-    wxpay: '/images/img/weapy.jpg',
-    alpay: '/images/img/alipay.jpg'
+    wxpay: "/images/img/weapy.jpg",
+    alpay: "/images/img/alipay.jpg",
   },
 
-  onLoad: function (options) {
+  onLoad: function (options) {},
 
-  },
+  onReady: function () {},
 
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function () {},
 
-  },
+  onReachBottom: function () {},
 
-  onReachBottom: function () {
-
-  }
-})
+  onShareAppMessage: function () {},
+});

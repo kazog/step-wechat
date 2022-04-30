@@ -1,4 +1,9 @@
-//
+/**
+ * Author: Meng
+ * Date: 2022-04
+ * Desc: 分类
+ */
+
 Page({
   data: {
     indicator: true,
@@ -27,7 +32,8 @@ Page({
         name: "天龙八部",
         url:
           "https://cn.bing.com/th?id=OHR.HuggingDay_ZH-CN2984681593_1920x1200.jpg",
-      },{
+      },
+      {
         name: "笑傲江湖",
         url:
           "https://cn.bing.com/th?id=OHR.LesserAntilles_ZH-CN3012679657_1920x1200.jpg",
@@ -44,8 +50,7 @@ Page({
   onChangeTab: function (e) {
     let tabIndex = parseInt(e.currentTarget.dataset.tag);
     this.setData({
-      tabIndex
-    })
+      tabIndex,
+    });
   },
-
 });

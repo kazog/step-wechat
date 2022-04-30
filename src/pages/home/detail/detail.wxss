@@ -1,0 +1,76 @@
+.detail {
+}
+.top-box {
+  height: 350rpx;
+  padding: 16rpx 32rpx 32rpx 32rpx;
+  /* background-color: rgb(80, 185, 200); */
+  background-color: #50c1f5;
+}
+.book-img {
+  width: 260rpx;
+  height: 350rpx;
+  margin-right: 24rpx;
+  border-radius: 16rpx;
+  background-color: #fff3e0;
+  box-shadow: 2rpx 6rpx 6rpx rgba(0, 0, 0, 0.1);
+}
+.book-name {
+  color: #232323;
+  font-size: 36rpx;
+  font-weight: 700;
+  line-height: 56rpx;
+}
+.top-label {
+  color: #606060;
+  font-size: 32rpx;
+  font-weight: 500;
+  line-height: 34rpx;
+  margin-top: 16rpx;
+}
+.tab-box {
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: white;
+  justify-content: space-evenly;
+}
+
+.label {
+  color: #636363;
+  font-size: 32rpx;
+  font-weight: 500;
+}
+.content-box {
+  padding: 16rpx 32rpx;
+}
+.node-box {
+  margin-bottom: 16rpx;
+  padding: 24rpx;
+  border-radius: 12rpx;
+  background-color: white;
+}
+.remark-box {
+  min-height: 140rpx;
+  margin-bottom: 16rpx;
+  padding: 24rpx;
+  border-radius: 12rpx;
+  background-color: white;
+}
+.user-name {
+  color: #232323;
+  font-size: 28rpx;
+  font-weight: 500;
+}
+.remark-date {
+  color: #979797;
+  font-size: 24rpx;
+  font-weight: 400;
+  margin-left: 16rpx;
+}
+.remark-str {
+  margin-top: 32rpx;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}

@@ -1,36 +1,33 @@
-// pages/my/mhome/mhome.js
-
+/**
+ * Author: Meng
+ * Date: 2022-04
+ * Desc: 个人信息
+ */
 const maxH = 260;
 
 Page({
-
   data: {
-    user: { avatar: '/images/icon/user_ic.png' },
+    user: { avatar: "/images/icon/user_ic.png" },
     alpha: 0,
-    title: '',
+    title: "",
     tabIndex: 0,
-    tabList: ['作品', '视频'],
+    tabList: ["作品", "视频"],
   },
 
   onLoad: function () {
     let that = this;
-
   },
 
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function () {},
 
-  },
-
-  onReachBottom: function () {
-
-  },
+  onReachBottom: function () {},
 
   onChangeTab: function (e) {
     // console.log(e);
     let index = e.currentTarget.dataset.index;
     this.setData({
-      tabIndex: index
-    })
+      tabIndex: index,
+    });
   },
 
   onPageScroll: function (e) {
@@ -43,7 +40,7 @@ Page({
     let title = that.data.user.nickName;
     that.setData({
       alpha,
-      title: alpha > 0.7 ? title : ''
-    })
-  }
-})
+      title: alpha > 0.7 ? title : "",
+    });
+  },
+});

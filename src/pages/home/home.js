@@ -1,7 +1,7 @@
 /**
- * User: Meng
+ * Author: Meng
  * Date: 2022-04
- * 首页
+ * Desc: 首页
  */
 import { queryBooks, queryHotBooks } from "../../modules/api/index";
 
@@ -84,13 +84,15 @@ Page({
   onPressHuati: function (e) {
     let that = this;
     let index = e.currentTarget.dataset.index;
-    
+
     wx.navigateTo({
-      url: '/pages/home/home',
+      url: "/pages/home/home",
     });
   },
-  onPressItem: function (e) {
+  onBookItem: function (e) {
     let tag = e.currentTarget.dataset.tag;
-    console.log(tag);
+    wx.navigateTo({
+      url: "/pages/home/detail/detail",
+    });
   },
 });

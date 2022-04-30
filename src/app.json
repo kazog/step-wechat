@@ -1,85 +1,89 @@
 {
-  "pages": [
-    "pages/home/home",
-    "pages/sort/sort",
-    "pages/my/my",
-    "pages/my/login/login",
-    "pages/my/info/info",
-    "pages/my/aid/aid",
-    "pages/my/history/history",
-    "pages/my/feedback/feedback",
-    "pages/my/share/share",
-    "pages/my/about/about",
-    "pages/sort/list/list",
-    "pages/sort/detail/detail"
-  ],
-  "subpackages": [
-    {
-      "root": "subpack",
-      "pages": [
-        "pages/index/index",
-        "pages/book/book",
-        "pages/order/order",
-        "pages/prize/prize",
-        "pages/author/author"
-      ]
-    }
-  ],
-  "window": {
-    "backgroundColor": "#F6F6F6",
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "知之书吧",
-    "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
-  },
-  "tabBar": {
-    "color": "#909090",
-    "selectedColor": "#121212",
-    "list": [
-      {
-        "selectedIconPath": "images/icon/home_on.png",
-        "iconPath": "images/icon/home_off.png",
-        "pagePath": "pages/home/home",
-        "text": "首页"
-      },
-      {
-        "selectedIconPath": "images/icon/hot_on.png",
-        "iconPath": "images/icon/hot_off.png",
-        "pagePath": "pages/sort/sort",
-        "text": "分类"
-      },
-      {
-        "selectedIconPath": "images/icon/me_on.png",
-        "iconPath": "images/icon/me_off.png",
-        "pagePath": "pages/my/my",
-        "text": "我的"
-      }
-    ]
-  },
-  "preloadRule": {
-    "pages/home/home": {
-      "network": "wifi",
-      "packages": ["subpack"]
-    }
-  },
-  "usingComponents": {
-    "empty": "/components/empty/empty",
-    "header": "/components/header/header",
-    "toptip": "/components/toptips/toptips"
-  },
-  "requiredBackgroundModes": [
-    "audio"
-  ],
-  "permission": {
-    "scope.userLocation": {
-      "desc": "您的位置信息将用于小程序推荐附加使用"
-    }
-  },
-  "networkTimeout": {
-    "request": 10000,
-    "downloadFile": 10000
-  },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+    "pages": [
+        "pages/home/home",
+        "pages/sort/sort",
+        "pages/my/my",
+        "pages/my/aid/aid",
+        "pages/my/info/info",
+        "pages/my/share/share",
+        "pages/my/login/login",
+        "pages/my/history/history",
+        "pages/my/feedback/feedback",
+        "pages/home/activity/activity",
+        "pages/home/detail/detail",
+        "pages/sort/list/list",
+        "pages/my/about/about",
+        "pages/my/setting/setting"
+    ],
+    "subpackages": [
+        {
+            "root": "supack",
+            "pages": [
+                "pages/index/index",
+                "pages/book/book",
+                "pages/order/order",
+                "pages/prize/prize",
+                "pages/author/author"
+            ]
+        }
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F6F6F6",
+        "navigationBarTitleText": "知之书吧",
+        "navigationBarTextStyle": "black",
+        "navigationStyle": "custom"
+    },
+    "tabBar": {
+        "color": "#909090",
+        "selectedColor": "#121212",
+        "list": [
+            {
+                "selectedIconPath": "images/icon/home_on.png",
+                "iconPath": "images/icon/home_off.png",
+                "pagePath": "pages/home/home",
+                "text": "首页"
+            },
+            {
+                "selectedIconPath": "images/icon/hot_on.png",
+                "iconPath": "images/icon/hot_off.png",
+                "pagePath": "pages/sort/sort",
+                "text": "分类"
+            },
+            {
+                "selectedIconPath": "images/icon/me_on.png",
+                "iconPath": "images/icon/me_off.png",
+                "pagePath": "pages/my/my",
+                "text": "我的"
+            }
+        ]
+    },
+    "preloadRule": {
+        "pages/home/home": {
+            "network": "wifi",
+            "packages": [
+                "supack"
+            ]
+        }
+    },
+    "usingComponents": {
+        "empty": "/components/empty/empty",
+        "header": "/components/header/header",
+        "toptip": "/components/toptips/toptips"
+    },
+    "requiredBackgroundModes": [
+        "audio"
+    ],
+    "permission": {
+        "scope.userLocation": {
+            "desc": "您的位置信息将用于小程序推荐附加使用"
+        }
+    },
+    "networkTimeout": {
+        "request": 20000,
+        "downloadFile": 30000
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
 }

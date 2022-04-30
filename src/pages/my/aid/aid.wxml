@@ -1,5 +1,5 @@
 <!-- -->
-<view class="aid-container">
+<view class="container aid">
   <header title="打赏开发者"/>
   <text class="aid-text">您的善心举动, 将会促使我们开发更多让您喜欢的功能！</text>
   <!-- <view style="height: 56rpx"/> -->

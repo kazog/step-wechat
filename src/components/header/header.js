@@ -1,17 +1,21 @@
-
+/**
+ * Author: Meng
+ * Date: 2022-04
+ * Desc: 小程序头布局
+ */
 Component({
     options: {
         multipleSlots: true,
         addGlobalClass: true
     },
     properties: {
-        extClass: {
-            type: String,
-            value: ''
-        },
         title: {
             type: String,
-            value: '百安居'
+            value: '柚书吧'
+        },
+        opacity: {
+          type: Number,
+          value: 1
         },
         background: {
             type: String,
@@ -59,7 +63,7 @@ Component({
             success: function success(res) {
                 let ios = !!(res.system.toLowerCase().search('ios') + 1);
                 _this.setData({
-                    ios: ios,
+                    ios,
                     statusBarHeight: res.statusBarHeight,
                     innerWidth: isSupport ? 'width:' + rect.left + 'px' : '',
                     innerPaddingRight: isSupport ? 'padding-right:' + (res.windowWidth - rect.left) + 'px' : '',

@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "menu_tab": "/components/menu_tab/tab"
+    }
+}

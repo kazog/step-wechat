@@ -67,7 +67,7 @@ export function request({
   loading && _loading(loading, loadStr);
   url = requestHost(env, host) + url;
   header = requestHeader(header);
-  // data = requestParams(data, host);
+  data = requestParams(data, host);
   const options = { url, method, data, header };
 
   _pointLog("=========> Request: ", options);

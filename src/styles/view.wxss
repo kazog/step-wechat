@@ -1,18 +1,13 @@
 /*  */
 
-.a-gridlist {
+.grid {
+  display: grid;
+}
+.wrap {
   display: flex;
   flex-wrap: wrap;
-  /* padding: 24rpx 0 16rpx 0; */
-  /* background-color: white; */
 }
-
-.a-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.a-column {
+.list {
   display: flex;
   flex-direction: column;
 }
@@ -36,7 +31,6 @@ direction: 动画执行方向。 */
   /* 暂停动画的执行 */
   -webkit-animation-play-state: paused;
 }
-
 
 @-webkit-keyframes run {
   from {

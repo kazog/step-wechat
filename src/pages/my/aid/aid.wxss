@@ -1,9 +1,8 @@
 /* client/pages/my/aid/aid.wxss */
-.aid-container {
-  height: 100%;
-  display: flex;
+.aid {
+  height: 100vh;
   align-items: center;
-  flex-direction: column;
+  padding-bottom: 44rpx;
 }
 .aid-text {
   margin: 32rpx;
@@ -12,7 +11,7 @@
   font-weight: 500;
 }
 .aid-img {
-  margin-top: 96rpx;
+  margin-top: 56rpx;
   width: 600rpx;
   height: 600rpx;
   border-radius: 12rpx;

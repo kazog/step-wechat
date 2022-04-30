@@ -1,0 +1,35 @@
+<view class="container detail">
+    <header title="{{title}}" background="{{color}}" />
+    <view class="row top-box" style="background-color: {{color}};">
+        <image class="book-img" />
+        <view class="column">
+            <!-- <text class="book-name">画年纪</text> -->
+            <text class="top-label">作者: <text class="value">阿猛/阿猛/阿猛/阿猛/阿猛</text></text>
+            <text class="top-label">类型: <text class="value">历史/文学</text></text>
+            <text class="top-label">字数: <text class="value">20万</text></text>
+            <text class="top-label">评分: <text class="value">4.5</text></text>
+            <text class="top-label">阅读: <text class="value">409</text></text>
+        </view>
+    </view>
+    <menu_tab bindchange="onChangeTab" />
+    <view class="content-box">
+        <text wx:if="{{tabIndex == 0}}" class="desc">《儒林外史》是一面封建社会的照妖镜。它通过对封建文人、官僚豪绅、市井无赖等各类人物无耻行为的真实生动的描写，深刻地揭露了行将崩溃的封建制度的腐朽性，强烈地抨击了罪恶的科举制度，并涉及了政治制度、伦理道德、社会风气等等，客观上否定了整个封建制度。否定、鞭挞科举制度，谴责官僚集团，揭露封建礼教，同情人民群众，这样一些内容使《儒林外史》成为一部具有进步的民主思想的名著。被科举制度害得精神失常、心理变态的范进；本是贫寒青年，但在黑暗社会的熏染下逐渐腐蚀变质，抛弃糟糠之妻，成了忘恩负义的卑鄙小人的匡超人；掠夺他人的土地，霸占寡妇的财产，专靠欺诈哄骗饱食终日的严贡生等人物形象，是中国讽刺文学中最早出现、最具影响的艺术典型。《儒林外史》还写了一些下层人民，表现了作者对他们深切的同情和热爱，颂赞他们正义、朴实的高贵品质和非凡的才能。鄙视功名的王冕，真诚善良的伶人鲍文...</text>
+        <view wx:if="{{tabIndex == 1}}" class="column">
+            <block wx:for="12345" wx:key="index">
+                <text class="node-box">第二回 王孝廉村学识同科 周蒙师暮年登上第</text>
+            </block>
+        </view>
+        <view wx:if="{{tabIndex == 2}}" class="column">
+            <block wx:for="12345" wx:key="index">
+                <view class="column remark-box">
+                    <view class="row ai-center">
+                        <image class="user-icon" />
+                        <text class="flex user-name">束的</text>
+                        <text class="remark-date">2022-01-23</text>
+                    </view>
+                    <text class="remark-str">不知怎的，一遍一遍读来，提起儒林外史，最先想到的却都是范进守制时的乔张作势，以及他迫不及待夹起的那一粒大虾元子。 窃以为，范进夹大虾元子的动作，完全可以成为本书一切故事的缩略图：做张做致，奉礼守法处几乎骗过众人，无奈作者妙笔一转</text>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>
